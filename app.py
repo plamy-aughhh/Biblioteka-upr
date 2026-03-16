@@ -13,5 +13,7 @@ if st.button("Check Box"):
     st.error("The book is not in  the database. ")
     new_book = st.text_input("Add a book")
     if st.button("Add"):
-      st.books.append(new_book)
+      book = {
+        "title": new_books}
+      st.books.append(book)
       st.success("The book was added to the database!")
