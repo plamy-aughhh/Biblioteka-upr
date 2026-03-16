@@ -18,3 +18,8 @@ if st.button("Check Box"):
       }
       st.new_book.append(book)
       st.success("The book was added to the database! ")
+      if len(st.new_book.append) == 0:
+        st.write("There are no new added books")
+      else:
+        for book in book_new:
+          st.write(book_new["title"])
