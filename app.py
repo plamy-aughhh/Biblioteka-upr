@@ -5,9 +5,7 @@ st.write("Enter a book title to see if it exists in the database")
 user_input = st.text_input ("Book Title")
 
 if st.button("Check Box"):
-  if user_input.strip() == "":
-    st.warning("Please enter a book title")
-  elif user_input in books:
+  if user_input in books:
     st.success("The book is in the database! ")
   else:
     st.error("The book is not in  the database. ")
@@ -17,4 +15,4 @@ if st.button("Check Box"):
         "title": new_book
       }
       st.new_book.append(book)
-      st.success("The book was added to the database!")
+      st.success("The book was added to the database! ")
