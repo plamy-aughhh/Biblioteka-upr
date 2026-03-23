@@ -11,15 +11,16 @@ if st.button("Check Box"):
     st.success("The book is in the database! ")
   else:
     st.error("The book is not in  the database. ")
-    new_book = st.text_input("Add a book")
+    book = st.text_input("Add a book")
     if st.button("Add"):
       book = {
         "title": new_book
       }
-      st.new_book.append(book)
+      st.books.append(book)
       st.success("The book was added to the database! ")
-      if len(st.new_book.append) == 0:
+      if len(st.books.append) == 0:
         st.write("There are no new added books")
       else:
-        for book in book_new:
-          st.write(book_new["title"])
+        for book in books:
+          st.write(book["title"])
+        
